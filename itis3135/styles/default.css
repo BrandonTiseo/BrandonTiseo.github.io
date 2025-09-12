@@ -52,7 +52,6 @@ li{
     font-family: 'Krub';
 }
 
-a:link, a:visited{
+a, a:visited{
     color:blue;
-
 }
