@@ -51,3 +51,8 @@ li{
     text-align: left;
     font-family: 'Krub';
 }
+
+a:link, a:visited{
+    color:blue;
+
+}
