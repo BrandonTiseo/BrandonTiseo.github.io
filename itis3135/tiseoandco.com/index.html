@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiseo & Co. || Home</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <!--Color Scheme: https://coolors.co/1dc690-edf2f4-276fbf-183059 -->
+    <style>
+        :root{
+            --mint: #1DC690;
+            --white: #EDF2F4;
+            --light-blue: #276FBF;
+            --dark-blue: #183059;
+        }
+        
+        *{
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: .625;
+        }
+
+        body{
+            background: linear-gradient(var(--white) 65%, var(--light-blue), var(--dark-blue));
+        }
+
+        main, header, footer{
+            margin: 5rem;
+        }
+
+        p{
+            font-family: "Source Sans 3", sans-serif;
+            font-size: 2rem;
+        }
+
+        h1{
+            font-family: "League Spartan", sans-serif;
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            left: 8rem;
+            font-size: 5rem;
+            line-height: 0.48;
+            white-space: nowrap;
+        }
+
+        h2,h3{
+            font-family: "League Spartan", sans-serif;
+        }
+
+        ul{
+            font-size: 1rem;
+            list-style-type: none;
+            margin-bottom: 2rem;
+        }
+
+        li::before{
+            content:"";
+            display: inline-block;
+            width: 0.7rem;
+            height: 0.7rem;
+            background-color: var(--light-blue);
+            margin-right: 0.5rem;
+            transform-origin: center;
+            transform: rotate(45deg);
+            position: relative;
+        }
+
+        address p{
+            font-weight: 600;
+        }
+
+        .name-and-logo{
+            display: flex;
+            height: 20rem;
+            width: 100%;
+            height: auto;
+            align-items:flex-start;
+            position: relative;
+        }
+
+        .name-and-logo img{
+            width: 100%;
+            max-width: 20rem;
+            max-height: 20rem;
+        }
+
+        .white-text{
+            color: var(--white);
+        }
+
+        .cool{
+            color: var(--light-blue);
+            font-weight: bold;
+            font-size: 1.25em;
+            font-style: italic;
+        }
+
+        .tiseo{
+            color: #fff;
+        }
+
+        .contact-us{
+            font-weight: 600;
+            font-family: "League Spartan", sans-serif;
+        }
+        
+        .example{
+            transition: transform 0.5s ease-out;
+        }
+
+        .example:hover{
+            transform: scale(1.5);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .service-text{
+            max-width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <header>    
+            <div class="name-and-logo">
+                <img src="./images/tiseoandco_logo_no_text.png" alt="Tiseo and Co. logo">
+                <h1><span class="tiseo">Tiseo</span> and Co.</h1>
+            </div>
+        </header>
+        <main>
+            <h2>Tiseo and Co.'s Services</h2>
+            <p class="service-text">Tiseo and Co. is a web design firm that works to bring a unique and enjoyable design and user experience to your website.</p>
+            <h3>About Us:</h3>
+            <ul> <!--Give non-standard bullet style-->
+                <li>Based in Point Hope, Alaska, United States.</li>
+                <li>673 human employees and 1 polar bear.</li>
+                <li>Founded in 2005.</li>
+                <li>Champions of the Point Hope Web Design Competition.</li>
+                <li>Every one of our employees skis to work.</li>
+                <li>Our employees work on your website no matter how high the snow is.</li>
+            </ul>
+            <h2>Check out some of our work:</h2>
+            <a href="https://webpages.charlotte.edu/btiseo/"><img class="example" src="./images/btiseo_personal.jpg" alt="btiseo personal webpage image"></a>
+            <a href="https://webpages.charlotte.edu/btiseo/itis3135/"><img class="example" src="./images/btiseo_3135.jpg" alt="btiseo itis3135 webpage image"></a>
+            <hr>
+        </main>
+        <footer>
+            <p class="contact-us">Contact us and we'll design a <span class="cool">cool</span> website for you:</p>
+            <address>
+                <p class="white-text">tiseoandco@gmail.com</p>
+                <p class="white-text">+1(907) 222-5520</p>
+                <p class="white-text">655 Tikigaq Ave Point Hope, AK 99766-9800</p>
+            </address>
+            <p class="white-text">&copy; Tiseo & Co. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
