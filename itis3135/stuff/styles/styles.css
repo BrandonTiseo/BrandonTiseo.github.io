@@ -1,0 +1,38 @@
+img{
+    height: 400px;
+    width: 400px;
+}
+
+body{
+    margin: 4px 22px 41px 84px;
+}
+h1{
+    font-family: 'Comic Sans MS';
+}
+
+p{
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 4rem;
+    color: #39ff11;
+    border-top: brown solid 400px; 
+    border-bottom: brown solid 1px; 
+    border-left: black dotted 81px;
+    border-right: black dotted 81px;
+}
+
+h2{
+    font-family: 'Papyrus';
+    color:cadetblue;
+    text-decoration: underline;
+    
+}
+
+ul{
+    text-align: center;
+    background-color: blue;
+}
+
+li{
+    color:blueviolet
+}
