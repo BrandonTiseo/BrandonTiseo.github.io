@@ -55,6 +55,12 @@ ul{
     padding: 0;
 }
 
+header p{
+    text-align: center;
+    font-family: "Chewy", sans-serif;
+    font-size: 1.2rem;
+}
+
 .donate a{
     color: white;
 }
