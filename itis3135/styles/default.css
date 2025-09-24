@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
+    color: #2f2f2f;
 }
 
 header, main, footer {
@@ -12,9 +13,8 @@ header, main, footer {
     padding: 5px;
 }
 
-h1, h2, b{
+h1, h2, h3, b{
     font-family:'Inter';
-    color: #424242;
 }
 
 p, a, figcaption{
@@ -35,7 +35,9 @@ footer{
 }
 
 p{
-    margin: 8px;
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
 }
 
 img{
@@ -56,6 +58,28 @@ a{
     color: #682BD7;
 }
 
+li p{
+    width: 80%;
+    display: inline;
+}
+
+main section{
+    border: #2f2f2f solid 1px;
+    border-radius: 5px;
+    margin: 8px;
+}
+
 a:visited{
     color: #682BD7;
 }
+
+.designed-by{
+    text-align: center;
+}
+
+.website-heading{
+    display: inline;
+    margin: 0;
+}
+
+
