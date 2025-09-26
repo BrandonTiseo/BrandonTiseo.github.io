@@ -5,13 +5,19 @@
     --dark-blue: #003049;
     --light-blue: #669BBC;
 }
-
+html{
+    height: 100%;
+    margin: 0;
+}
 body{
     background-color: var(--off-white);
     color: #2f2f2f;
     overflow-x: hidden;
+    height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -23,6 +29,7 @@ main{
     margin: 0 auto;
     width: 90%;
     max-width: 800px;
+    flex: 1;
 }
 
 footer{
@@ -46,8 +53,16 @@ h4{
     font-weight: normal;
 }
 
-p, a, li{
+a, li{
     font-family: "Poppins", serif
+}
+
+p{
+    font-family: "Poppins", serif;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 68%;
+    
 }
 
 ul{
@@ -59,6 +74,24 @@ header p{
     text-align: center;
     font-family: "Chewy", sans-serif;
     font-size: 1.2rem;
+}
+
+nav{
+    text-align: center;
+}
+
+img{
+    margin: 0 auto;
+    display: block;
+}
+
+a{
+    color: #003049
+}
+
+
+a:visited{
+    color:#003049
 }
 
 .donate a{
@@ -98,7 +131,7 @@ header p{
   justify-content: center;
 }
 
-.img{
+.img-container img{
     width: 500px;
     height: 375px;
 }
