@@ -62,7 +62,6 @@ p{
     margin: 0 auto;
     margin-bottom: 30px;
     width: 68%;
-    
 }
 
 ul{
@@ -92,6 +91,11 @@ a{
 
 a:visited{
     color:#003049
+}
+
+footer p {
+    width: auto;
+    margin: 0;
 }
 
 .donate a{
