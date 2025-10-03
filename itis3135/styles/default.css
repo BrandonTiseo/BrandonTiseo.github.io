@@ -5,13 +5,31 @@ body {
     text-align: center;
     color: #2f2f2f;
 }
-
-header, main, footer {
+header{
     background-color: #fff;
-    max-width: 90vmin;
+    max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
-    padding: 5px;
 }
+
+main{
+    background-color: #fff;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer{
+    background-color: #fff;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
 
 h1, h2, h3, b{
     font-family:'Inter';
@@ -36,7 +54,8 @@ footer{
 
 p{
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
+    max-width: fit-content;
     text-align: left;
 }
 
@@ -83,3 +102,45 @@ a:visited{
 }
 
 
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    header{
+        max-width: 1400px;
+    }
+
+    main{
+        max-width: 1400px;
+    }
+
+    footer{
+        max-width: 1400px;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    header{
+        max-width: 980px;
+    }
+
+    main{
+        max-width: 980px;
+    }
+
+    footer{
+        max-width: 980px;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    header{
+        max-width: 600px;
+    }
+
+    main{
+        max-width: 600px;
+    }
+
+    footer{
+        max-width: 600px;
+    }
+}
