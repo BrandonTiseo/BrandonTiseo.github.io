@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Mate:ital@0;1&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <title>Gardening || Home</title>
+    <style>
+        :root{
+            --dark_green: #084734;
+            --lime: #CEF178;
+            --light_green: #CDEDB3
+        }
+        body{
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            background-color: var(--dark_green);
+            font-family: 'Cantarell', sans-serif
+        }
+
+        nav{
+            background-color: var(--light_green);
+            text-align: center;
+            color: var(--dark_green);
+            font-weight: 700;
+            border-radius: 5px;
+        }
+
+        section{
+            background-color: var(--light_green);
+            color: var(--dark_green);
+            border-radius: 5px;
+        }
+
+        h1{
+            font-family: 'Signika', sans-serif;
+            color: var(--lime);
+        }
+
+        h2, h3{
+            font-family: 'Mate', serif;
+        }
+
+        img{
+            border-radius: 5px;
+        }
+        
+        figure{
+            width: 200px;
+            margin: 0px;
+            display: table;
+        }
+
+        figcaption{
+            display: table-caption;
+            caption-side: bottom;
+            font-weight: bold;
+
+        }
+
+        table{
+            border: 2px solid #2f2f2f;
+            border-collapse: collapse;
+        }
+        td{
+            border: 2px solid #2f2f2f;
+            gap: 0px;
+            text-align: center;
+            padding: 0px;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        li::before{
+            content: '\1F331';
+        }
+ 
+        a{
+            color: var(--dark_green);
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: var(--dark_green);
+        }
+
+        footer a{
+            color: var(--lime);
+            font-weight: bold;
+        }
+
+        footer a:visited{
+            color: var(--lime);
+        }
+
+        footer p{
+            color: var(--lime);   
+        }
+
+        table img{
+            border-radius: 0px;
+        }
+
+
+
+        .container{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            gap: 5px;
+
+        }
+        .page {
+        display: none;
+        padding: 2em;
+        }
+
+        .active {
+        display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gardening</h1>
+        <nav>
+            <p>
+                <a data-target="who">Who</a> &#127793;
+                <a data-target="what">What</a> &#127793;
+                <a data-target="when">When</a> &#127793;
+                <a data-target="where">Where</a> &#127793;
+                <a data-target="how">How</a> &#127793;
+                <a data-target="why">Why</a> &#127793;
+                <a data-target="ai">AI</a>
+            </p>
+        </nav>
+    </header>
+    <main>
+        <section id="who" class="page">
+            <h2>About Me</h2>
+            <p>Hello! I am Brandon Tiseo a third year university student at UNC Charlotte. I picked up gardening as a hobby when I started college, around the same time as when I began my cooking hobby.</p>
+            <p>I picked up gardening because I wanted to decorate my apartment/dorm with plants to make it feel more like home. I also wanted to grow my own herbs for my cooking and have successfully kept a basil plant alive for three years! </p>
+            <h3>Current plants</h3>
+            <div class="container">
+                <figure>
+                    <img src="./images/african_violets.jpg"  alt="african violets">
+                    <figcaption>African Violets</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/basil.jpg" alt="basil">
+                    <figcaption>Basil plant</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/cactus.jpg" alt="cactus">
+                    <figcaption>Cactus</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/monstera.jpg"  alt="monstera">
+                    <figcaption>Monstera</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/neon_pothos.jpg" alt="neon pothos">
+                    <figcaption>Neon Pothos</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/succulant.jpg"  alt="succulant">
+                    <figcaption>Succulant</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="what" class="page active">
+            <h2>What is Gardening?</h2>
+            <img src="./images/gardening_icon.png" alt="gardening icon">
+            <p>Gardening is the activity that involves the care and cultivation of plants. Gardening can be done for various purposes including growing food, creating decoration, or providing wildlife habitats.</p>
+            <p>Being a gardener means you understand the care process required for your plants, as every plant can have very different needs from one another. Being a gardener is also not only applicable to people with lots of plants. If you only have one plant you take care of you are a gardener!</p>
+                <figure>
+                    <img src="./images/succulant.jpg" alt="succulant">
+                    <figcaption>My first plant - Succulant</figcaption>
+                </figure>
+        </section>
+        <section id="when" class="page">
+            <h2>When Should I Garden?</h2>
+            <p>Gardening can be done at any time of the year but which plants you can grow at which time varies. Some plants thrive in Spring but die in Winter and vice versa. Some plants do better outdoors and some indoors.</p>
+            <p>There is a lot of variation between the conditions each plant thrives in and it is important to know those conditions! I personally like to keep track of important care information for each of my plants which I can reference anytime!</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plant</th>
+                        <th>Time to Grow</th>
+                        <th>Ideal Temperature</th>
+                        <th>Sunlight</th>
+                        <th>Watering Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/african_violets.jpg" alt="african violets">
+                                <figcaption>African Violets</figcaption>
+                            </figure>
+                        </td>
+                        <td>Year-round; blooms in spring and fall.</td>
+                        <td>65°F – 80°F</td>
+                        <td>Bright, indirect light</td>
+                        <td>Water once a week.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/basil.jpg"  alt="basil">
+                                <figcaption>Basil</figcaption>
+                            </figure>
+                        </td>
+                        <td>Late spring to fall.</td>
+                        <td>75°F – 85°F</td>
+                        <td>6–8 hours of direct sunlight</td>
+                        <td>Water once a week.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/cactus.jpg"  alt="Cactus">
+                                <figcaption>Cactus</figcaption>
+                            </figure>
+                        </td>
+                        <td>Spring.</td>
+                        <td>65°F – 90°F</td>
+                        <td>6 hours of direct sunlight</td>
+                        <td>Water once a week in spring/summer; every 4–6 weeks in fall/winter.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/monstera.jpg"  alt="monstera">
+                                <figcaption>Monstera</figcaption>
+                            </figure>
+                        </td>
+                        <td>Spring.</td>
+                        <td>65°F – 85°F</td>
+                        <td>Bright, indirect light</td>
+                        <td>Water once a week, when top soil feels dry.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/neon_pothos.jpg" alt="neon pothos">
+                                <figcaption>Neon Pothos</figcaption>
+                            </figure>
+                        </td>
+                        <td>Spring and summer.</td>
+                        <td>65°F – 85°F</td>
+                        <td>Bright, indirect light</td>
+                        <td>Water once a week.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <figure>
+                                <img src="./images/succulant.jpg" alt="succulant">
+                                <figcaption>Succulent</figcaption>
+                            </figure>
+                        </td>
+                        <td>Spring and early summer.</td>
+                        <td>40°F – 80°F</td>
+                        <td>Bright, indirect light</td>
+                        <td>Water once a week in spring/summer; every 4–6 weeks in fall/winter.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </section>
+        <section id="where" class="page">
+            <h2>Where Should I Garden?</h2>         
+            <p>Gardening can be done almost anywhere! Just make sure you know where your plant grows best. There are many criteria to be considered when deciding when and where to grow your plants, below are a few that you may consider.</p>
+            <figure>
+                <img src="./images/plant_growing_infographic.png" alt="infographic on where/when to grow plants">
+                <figcaption>Pinder's Nursery infographic for where and when to grow your plants.</figcaption>
+            </figure>
+            <p>The OldFarmer's Almanac has a plant growing guide library that contains information on how to grow almost any plant. Go to <a href="https://www.almanac.com/gardening/growing-guides">their website</a> for more in depth information on where to grow your plants.</p>
+        </section>
+        <section id="how" class="page">
+            <h2>How do I Garden?</h2>
+            <figure>
+                <img src="./images/watering_plant.jpg" alt="a plant being watered">
+                <figure>Properly water your plants!</figure>
+            </figure>
+            <p>You may be wondering "how do I even take care of my plants?" It is actually far more simple than you may think and only takes a handful of steps to ensure your plants are healthy! Below is a general guide on how to take care of your plants:</p>
+            <ul>
+                <li>Place your plants in their ideal light level.</li>
+                <li>Give your plants their correct soil type and optionally some fertillizer.</li>
+                <li>Follow your plants water schedule to ensure they are always properly hydrated.</li>
+                <li>Occasionally repot the plant to ensure it has room to grow.</li>
+            </ul>
+            
+        </section>
+        <section id="why" class="page">
+            <h2>Why Should I Garden?</h2>
+            <p>Many people wonder what is the point in growing plants? Besides providing some simple decoration, plants give us a variety of benefits and have many uses beyond simple decor! Below are some examples:</p>
+            <h3>Benefits</h3>
+            <ul>
+                <li>Stress reduction</li>
+                <li>Improved air and water quality</li>
+                <li>Enhanced productivity and mood</li>
+                <li>Connection to nature</li>
+            </ul>
+            <h3>Uses</h3>
+            <ul>
+                <li>Decor</li>
+                <li>Food</li>
+                <li>Spices/Seasoning</li>
+                <li>Medicinal</li>
+                <li>Environmental</li>
+            </ul>
+            <figure>
+                <img src="./images/benefits_of_gardening.jpg" alt="infogrpahic of gardening benefits">
+                <figcaption>Various benefits assosciated with gardening</figcaption>
+            </figure>
+        </section>
+        <section id="ai" class="page">
+            <h2>AI Prompts</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Prompt</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Microsoft Copilot</td>
+                        <td>In HTML/CSS/JS I want to make it so my webpage is only one .html file. I want to make it so that each "page" is contained entirely within its own section element. I want a way to be able to click a link in the nav bar to hide/unhide each of these pages so only one is displayed at a time.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p class="designed-by">Designed by <a href="./tiseoandco.com/">Tiseo &amp; Co.</a> &copy;2025</p>
+    </footer>
+
+    <script>
+    document.querySelectorAll('nav a').forEach((link) => {
+        link.addEventListener('click', () => {
+        const targetId = link.getAttribute('data-target');
+        document.querySelectorAll('.page').forEach((section) => {
+            section.classList.remove('active');
+        });
+        document.getElementById(targetId).classList.add('active');
+        });
+    });
+    </script>
+</body>
+</html>
