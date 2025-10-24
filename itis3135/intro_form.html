@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Tiseo's Bold Turtle || ITIS3135 Intro Form</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Intro Form</h2>
+        <form id="intro-form" novalidate>
+            <h3>Please submit the form below</h3>
+            <label for="first-name">First name:</label>
+            <input type="text" name="first-name" id="first-name" value="Brandon" placeholder="Enter your first name" required>
+
+            <label for="middle-name">Middle name or initial:</label>
+            <input type="text" name="middle-name" id="middle-name" value="D." placeholder="Enter your middle name or initial (optional)">
+
+            <label for="nickname">Nickname/preferred name:</label>
+            <input type="text" name="nickname" id="nickname" value="Brandon" placeholder="What do you prefer to be called? (optional)">      
+
+            <label for="last-name">Last name:</label>
+            <input type="text" name="last-name" id="last-name" value="Tiseo" placeholder="Enter your last name" required>
+
+            <label for="acknowledgment-statement">Acknowledgement statement:</label>
+            <input type="text" name="acknowledgment-statement" id="acknowledgment-statement" value="I understand that what I put here is publicly available and I will not write anything that I do not wish for the public to see - Brandon Tiseo" placeholder="Type your acknowledgment statement" required>
+
+            <label for="acknowledgment-date">Acknowledgement date:</label>
+            <input type="text" name="acknowledgment-date" id="acknowledgment-date" value="08/19/2025" placeholder="Enter the date (mm/dd/yyyy)" required>
+
+            <label for="mascot-adj">Mascot adjective:</label>
+            <input type="text" name="mascot-adj" id="mascot-adj" value="Bold" placeholder="Enter an adjective (e.g., Brave, Bold, Clever)" required>
+
+            <label for="mascot-animal">Mascot animal:</label>
+            <input type="text" name="mascot-animal" id="mascot-animal" value="Turtle" placeholder="Enter an animal (e.g., Turtle, Eagle, Bear)" required>
+
+            <label for="divider">Divider (ie, ~, |, etc):</label>
+            <input type="text" name="divider" id="divider" value="|" placeholder="Enter a single divider symbol" required>
+
+            <label for="picture">Photo:</label>
+            <input type="file" name="picture" id="picture" required>
+
+            <label for="picture-caption">Photo's caption:</label>
+            <input type="text" name="picture-caption" id="picture-caption" value="At my internship, July 2025." placeholder="Write a short caption for your photo" required>
+
+            <label for="personal-statement">Personal statement:</label>
+            <input type="text" name="personal-statement" id="personal-statement" value="Hello! My name is Brandon Tiseo and I am a Junior computer science major, concentrating in software development, and minoring in computer engineering. I am 20 years old and was born in Long Island, New York but I have lived in the Charlotte area for most of my life. After graduating I plan to work either as a software developer or in IT." placeholder="Introduce yourself in a few sentences" required>
+
+            <label for="personal-background">Personal background:</label>
+            <input type="text" name="personal-background" id="personal-background" value="My hobbies include cooking/baking, video games, reading, drawing, and playing an instrument." placeholder="Share your hobbies or interests" required>
+
+            <label for="professional-background">Professional background:</label>
+            <input type="text" name="professional-background" id="professional-background" value="I began my career in computer science three years ago in high school where I was first exposed to Python. Since then, I have participated in several hackathons focused in various areas of computing and have completed an internship at INSP, LLC as an IT intern." placeholder="Describe your work or internship experience" required>
+
+            <label for="academic-background">Academic background:</label>
+            <input type="text" name="academic-background" id="academic-background" value="I am currently a Junior majoring in computer science with a concentration in software development and a minor in computer engineering. I plan to graduate in Spring, 2027." placeholder="Summarize your education and major" required>
+
+            <label for="frontend-background">Frontend web development background:</label>
+            <input type="text" name="frontend-background" id="frontend-background" value="I am very new to web development. The only experience I have is taking online lessons through websites like FreeCodeCamp and CodeDex." placeholder="Describe your experience with web development" required>
+
+            <label for="primary-computer">Primary computer:</label>
+            <input type="text" name="primary-computer" id="primary-computer" value="Custom-built, Windows 11, desktop, apartment/home." placeholder="Describe your main computer setup" required>
+            <h3 id="courses-label">Courses I am taking:</h3>
+            <div id="courses-container">
+
+            </div>
+            <button type="button" id="add-course">Add course</button>
+
+            <label for="quote">Quote:</label>
+            <input type="text" name="quote" id="quote" value="“But in the end it is only a passing thing, this shadow; even darkness must pass.”" placeholder="Enter a favorite quote" required>
+
+            <label for="quote-author">Quote author:</label>
+            <input type="text" name="quote-author" id="quote-author" value="J.R.R Tolkein, The Lord of the Rings" placeholder="Who said or wrote the quote?" required>
+
+            <label for="funny">Funny thing:</label>
+            <input type="text" name="funny" id="funny" value="I have a pet pig named Arnold." placeholder="Share a funny or quirky fact about yourself (optional)">
+
+            <label for="share">Something I'd like to share:</label>
+            <input type="text" name="share" id="share" value="I've lived in Charlotte, NC most of my life but I was born in Long Island, NY!" placeholder="Add any other interesting detail about you (optional)">
+
+            <label for="linkedin">LinkedIn </label>
+            <input type="url" name="linkedin" id="linkedin" value="https://www.linkedin.com/in/brandon-tiseo/" placeholder="Enter a link to your LinkedIn profile" required>
+
+            <label for="github">GitHub:</label>
+            <input type="url" name="github" id="github" value="https://github.com/BrandonTiseo" placeholder="Enter a link to your GitHub profile" required>
+
+            <label for="freecodecamp">freeCodeCamp:</label>
+            <input type="url" name="freecodecamp" id="freecodecamp" value="https://www.freecodecamp.org/brandontiseo" placeholder="Enter a link to your FreeCodeCamp profile" required>
+
+            <label for="codecademy">Codecademy:</label>
+            <input type="url" name="codecademy" id="codecademy" value="https://www.codecademy.com/profiles/BrandonTiseo" placeholder="Enter a link to your Codecademy profile" required>
+
+            <label for="clt-website">CLT Website:</label>
+            <input type="url" name="clt-website" id="clt-website" value="https://webpages.charlotte.edu/btiseo/" placeholder="Enter a link to your UNC Charlotte webpage" required>
+            <div id="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</Button>
+                <button type="button" id="clear-button">Clear</button>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src ="./scripts/introduction.js"></script>
+</body>
+</html>
