@@ -140,12 +140,15 @@ formElement.addEventListener('submit', (e) => {
 
     document.querySelector('main').appendChild(introSection);
     formElement.style.display = 'none';
+    document.querySelector('footer').style.display = 'none';
 
     const resubmitButton = document.getElementById('resubmit');
     resubmitButton.addEventListener('click', () => {
         introSection.remove();
         document.querySelector('button[type="reset"]').click();
         formElement.style.display = 'block';
+        document.querySelector('footer').style.display = 'block';
+
     });
 });
 
