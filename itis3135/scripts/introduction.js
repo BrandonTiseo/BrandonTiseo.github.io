@@ -62,7 +62,7 @@ function buildIntroHTML(formData){
     
     const introHTMLString = 
     `
-        <h3>${formData["first-name"]} "${formData["nickname"]}" ${formData["middle-name"]} ${formData["divider"]} ${formData["mascot-adj"]} ${formData["mascot-animal"]}</h3>
+        <h3>${formData["first-name"]} "${formData["nickname"]}" ${formData["middle-name"]} ${formData["last-name"]} ${formData["divider"]} ${formData["mascot-adj"]} ${formData["mascot-animal"]}</h3>
         <figure>
             <img src="${imageUrl}" alt="A photo of ${formData["first-name"]} ${formData["last-name"]}">
             <figcaption><i>${formData["picture-caption"]}</i></figcaption>
