@@ -52,17 +52,29 @@ function buildIntroHTML(formData){
             }
     }
     if (coursesHTMLString === "")
-        coursesHTMLString = "N/A";
+        coursesHTMLString = `<li>
+                        <b>ITIS 3166</b> - Backend Web Development: I wanted to take backend and frontend web development in the same semester and I am very interested in web development.
+                    </li>
+                    <li><b>ITSC 3688</b> - Computers & Their Impact on Society: Required course for my major.</li>
+                    <li>
+                        <b>ITIS 3135</b> - Frontend Web Development: I wanted to take backend and frontend web development in the same semester and I am very interested in web development.
+                    </li>
+                    <li><b>ECGR 2181</b> - Logic System Design: It is a part of my computer engineering minor.</li>
+                    <li>
+                        <b>MUPF 1113</b> - Symphonic Band: I am very passionate about playing an instrument and wanted to pursue playing in a band again.
+                    </li>`;
 
     const imageFile = document.getElementById('picture').files[0];
     let imageUrl = '';
     if (imageFile) {
         imageUrl = URL.createObjectURL(imageFile);
+    } else {
+        imageUrl = './images/brandon_tiseo.jpg';
     }
     
     const introHTMLString = 
-    `
-        <h3>${formData["first-name"]} "${formData["nickname"]}" ${formData["middle-name"]} ${formData["last-name"]} ${formData["divider"]} ${formData["mascot-adj"]} ${formData["mascot-animal"]}</h3>
+    `   
+        <h3>${formData["first-name"]} ${formData["nickname"]} ${formData["middle-name"]} ${formData["last-name"]} ${formData["divider"]} ${formData["mascot-adj"]} ${formData["mascot-animal"]}</h3>
         <figure>
             <img src="${imageUrl}" alt="A photo of ${formData["first-name"]} ${formData["last-name"]}">
             <figcaption><i>${formData["picture-caption"]}</i></figcaption>
@@ -94,24 +106,23 @@ function buildIntroHTML(formData){
             </li>
             <li><b>Funny/Interesting Item to Remember me by: </b>${formData["funny"]}</li>
             <li><b>I'd also like to Share: </b>${formData["share"]}</li>
-            <p>${formData["acknowledgment-statement"]} - ${formData["acknowledgment-date"]}</p>
-            <p><b>Quote:</b></p>
-            <p><q><em>${formData["quote"]}</em></q></p>
-            <p><em>- ${formData["quote-author"]}</em></p>
-            <button type="button" id="resubmit">Submit Form Again</button> 
-            <nav>
-                <a href="${formData["clt-website"]}">CLT website</a> 
-                ${formData["divider"]}
-                <a href="${formData["github"]}">GitHub</a> 
-                ${formData["divider"]}
-                <a href="${formData["freecodecamp"]}">FreeCodeCamp</a>
-                ${formData["divider"]}
-                <a href="${formData["codecademy"]}">Codecadamy</a>
-                ${formData["divider"]}
-                <a href="${formData["linkedin"]}">LinkedIn</a> 
-            </nav>
-            <p class="designed-by">Designed by <a href="./tiseoandco.com/">Tiseo &amp Co.</a> &copy;2025</p>
-        </ul>`;
+        </ul>
+        <p><q><em>${formData["quote"]}</em></q></p>
+        <p><em>- ${formData["quote-author"]}</em></p>
+        <button type="button" id="resubmit">Submit Form Again</button> 
+        <nav>
+            <a href="${formData["clt-website"]}">CLT website</a> 
+            ${formData["divider"]}
+            <a href="${formData["github"]}">GitHub</a> 
+            ${formData["divider"]}
+            <a href="${formData["freecodecamp"]}">FreeCodeCamp</a>
+            ${formData["divider"]}
+            <a href="${formData["codecademy"]}">Codecadamy</a>
+            ${formData["divider"]}
+            <a href="${formData["linkedin"]}">LinkedIn</a> 
+        </nav>
+        <p class="designed-by">Designed by <a href="./tiseoandco.com/">Tiseo &amp Co.</a> &copy;2025</p>
+        `;
     return introHTMLString;
 }
 
@@ -131,24 +142,27 @@ formElement.addEventListener('submit', (e) => {
         alert("Ensure every required field has an input!");
         return;
     }
-    alert("Form submitted successfully!");
+
     const formData = new FormData(formElement);
     const formDataObject = Object.fromEntries(formData.entries());
 
     const introSection = document.createElement('section');
     introSection.innerHTML = buildIntroHTML(formDataObject);
+    introSection.style.margin = 0;
 
-    document.querySelector('main').appendChild(introSection);
     formElement.style.display = 'none';
     document.querySelector('footer').style.display = 'none';
+
+    document.querySelector('main').appendChild(introSection);
 
     const resubmitButton = document.getElementById('resubmit');
     resubmitButton.addEventListener('click', () => {
         introSection.remove();
-        document.querySelector('button[type="reset"]').click();
         formElement.style.display = 'block';
         document.querySelector('footer').style.display = 'block';
-
+        formElement.reset();
+        courseCounter = 0;
+        const coursesContainer = document.getElementById('courses-container');
+        coursesContainer.innerHTML = '';
     });
 });
-

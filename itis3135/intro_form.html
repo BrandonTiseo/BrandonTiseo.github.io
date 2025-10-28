@@ -15,17 +15,17 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2>Intro Form</h2>
+        <h2>Introduction Form</h2>
         <form id="intro-form" novalidate>
             <h3>Please submit the form below</h3>
             <label for="first-name">First name:</label>
             <input type="text" name="first-name" id="first-name" value="Brandon" placeholder="Enter your first name" required>
 
             <label for="middle-name">Middle name or initial:</label>
-            <input type="text" name="middle-name" id="middle-name" value="D." placeholder="Enter your middle name or initial (optional)">
+            <input type="text" name="middle-name" id="middle-name" value="" placeholder="Enter your middle name or initial (optional)">
 
             <label for="nickname">Nickname/preferred name:</label>
-            <input type="text" name="nickname" id="nickname" value="Brandon" placeholder="What do you prefer to be called? (optional)">      
+            <input type="text" name="nickname" id="nickname" value="" placeholder="What do you prefer to be called? (optional)">      
 
             <label for="last-name">Last name:</label>
             <input type="text" name="last-name" id="last-name" value="Tiseo" placeholder="Enter your last name" required>
@@ -43,10 +43,10 @@
             <input type="text" name="mascot-animal" id="mascot-animal" value="Turtle" placeholder="Enter an animal (e.g., Turtle, Eagle, Bear)" required>
 
             <label for="divider">Divider (ie, ~, |, etc):</label>
-            <input type="text" name="divider" id="divider" value="|" placeholder="Enter a single divider symbol" required>
+            <input type="text" name="divider" id="divider" value="||" placeholder="Enter a single divider symbol" required>
 
             <label for="picture">Photo:</label>
-            <input type="file" name="picture" id="picture" required>
+            <input type="file" name="picture" id="picture">
 
             <label for="picture-caption">Photo's caption:</label>
             <input type="text" name="picture-caption" id="picture-caption" value="At my internship, July 2025." placeholder="Write a short caption for your photo" required>
@@ -58,7 +58,7 @@
             <input type="text" name="personal-background" id="personal-background" value="My hobbies include cooking/baking, video games, reading, drawing, and playing an instrument." placeholder="Share your hobbies or interests" required>
 
             <label for="professional-background">Professional background:</label>
-            <input type="text" name="professional-background" id="professional-background" value="I began my career in computer science three years ago in high school where I was first exposed to Python. Since then, I have participated in several hackathons focused in various areas of computing and have completed an internship at INSP, LLC as an IT intern." placeholder="Describe your work or internship experience" required>
+            <input type="text" name="professional-background" id="professional-background" value="I began my career in computer science three years ago in high school where I was first exposed to Python. Since then, I've participated in several hackathons focused in various areas of computing, and have completed an internship at INSP, LLC as an IT intern." placeholder="Describe your work or internship experience" required>
 
             <label for="academic-background">Academic background:</label>
             <input type="text" name="academic-background" id="academic-background" value="I am currently a Junior majoring in computer science with a concentration in software development and a minor in computer engineering. I plan to graduate in Spring, 2027." placeholder="Summarize your education and major" required>
@@ -75,7 +75,7 @@
             <button type="button" id="add-course">Add course</button>
 
             <label for="quote">Quote:</label>
-            <input type="text" name="quote" id="quote" value="“But in the end it is only a passing thing, this shadow; even darkness must pass.”" placeholder="Enter a favorite quote" required>
+            <input type="text" name="quote" id="quote" value="But in the end it is only a passing thing, this shadow; even darkness must pass." placeholder="Enter a favorite quote" required>
 
             <label for="quote-author">Quote author:</label>
             <input type="text" name="quote-author" id="quote-author" value="J.R.R Tolkein, The Lord of the Rings" placeholder="Who said or wrote the quote?" required>
@@ -86,20 +86,6 @@
             <label for="share">Something I'd like to share:</label>
             <input type="text" name="share" id="share" value="I've lived in Charlotte, NC most of my life but I was born in Long Island, NY!" placeholder="Add any other interesting detail about you (optional)">
 
-            <label for="linkedin">LinkedIn </label>
-            <input type="url" name="linkedin" id="linkedin" value="https://www.linkedin.com/in/brandon-tiseo/" placeholder="Enter a link to your LinkedIn profile" required>
-
-            <label for="github">GitHub:</label>
-            <input type="url" name="github" id="github" value="https://github.com/BrandonTiseo" placeholder="Enter a link to your GitHub profile" required>
-
-            <label for="freecodecamp">freeCodeCamp:</label>
-            <input type="url" name="freecodecamp" id="freecodecamp" value="https://www.freecodecamp.org/brandontiseo" placeholder="Enter a link to your FreeCodeCamp profile" required>
-
-            <label for="codecademy">Codecademy:</label>
-            <input type="url" name="codecademy" id="codecademy" value="https://www.codecademy.com/profiles/BrandonTiseo" placeholder="Enter a link to your Codecademy profile" required>
-
-            <label for="clt-website">CLT Website:</label>
-            <input type="url" name="clt-website" id="clt-website" value="https://webpages.charlotte.edu/btiseo/" placeholder="Enter a link to your UNC Charlotte webpage" required>
             <div id="form-buttons">
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</Button>
