@@ -31,7 +31,7 @@ function buildJSON(formData){
             delete formData[`course-reason${i}`];
         }
     }  
-    if(courses.length === 0){
+    if (courses.length === 0){
         courses = [
             {
                 "id": "ITIS 3166",
@@ -58,7 +58,7 @@ function buildJSON(formData){
                 "name": "Symphonic Band",
                 "reason": "I am very passionate about playing an instrument and wanted to pursue playing in a band again."
             }
-        ]
+        ];
 
     }
     formData['courses']  = courses;
