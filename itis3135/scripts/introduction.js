@@ -24,6 +24,7 @@ function addCourseDeleteButton(newCourse) {
 
 function addCourse(){
     courseCounter+=1;
+    
     const coursesContainer = document.getElementById('courses-container');
     const newCourse = document.createElement('div');
     newCourse.id = `course${courseCounter}`;

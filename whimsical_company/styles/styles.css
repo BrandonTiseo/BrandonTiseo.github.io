@@ -74,6 +74,10 @@ header p{
     font-family: "Chewy", sans-serif;
     font-size: 1.2rem;
 }
+pre code{
+    text-align: left;
+    margin: 0 auto;
+}
 
 nav{
     text-align: center;

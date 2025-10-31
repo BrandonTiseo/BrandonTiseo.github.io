@@ -82,6 +82,7 @@ form{
     margin: 0 auto;
 }
 
+
 form label{
     margin: 0 auto;
     display: block;
@@ -134,6 +135,20 @@ li p{
 main section{
     border-radius: 5px;
     margin: 8px;
+}
+pre{
+    width: 90%;
+}
+pre, code {
+  white-space: pre-wrap; 
+  overflow-wrap: break-word; 
+  background: #2f2f2f;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 15px;
 }
 
 table{
