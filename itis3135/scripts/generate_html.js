@@ -113,7 +113,14 @@ generateHTMLButton.addEventListener('click', (e) => {
     const formData = new FormData(formElement);
     const formDataObject = Object.fromEntries(formData.entries());
 
-    
+    const output = document.createElement('pre');
+    output.style.textAlign = 'left';
+
+    output.innerHTML = '<code class="language-html"></code>';
+    const codeElement = output.querySelector('code');
+    codeElement.textContent = buildIntroHTML(formDataObject);
+
+    hljs.highlightElement(codeElement);
     formElement.style.display = 'none';
     document.querySelector('main').appendChild(output);
 
