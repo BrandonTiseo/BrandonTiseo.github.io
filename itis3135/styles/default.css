@@ -63,9 +63,20 @@ img{
     max-width: 35%;
 }
 
-ul{
-    max-width: 90%;
+figure img{
+    max-width: 60%;
+}
 
+
+ul{
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+ol{
+    max-width: 80%;
+    margin: 0 auto;
 }
 li{
     margin: 8px;
