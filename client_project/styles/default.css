@@ -1,0 +1,25 @@
+header{
+   /*border: 1px solid black; */
+   display: flex;
+   justify-content: space-evenly;
+   gap: 10px;
+   padding: 0px;
+   margin: 0 auto;
+}
+
+header nav{
+    /*border: 1px solid black;*/
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header nav a{
+    font-size: 20px;
+}
+
+header nav a:last-child{
+    background-color: blue;
+}
