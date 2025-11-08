@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lite-d-core | Home</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel = "stylesheet" href="./styles/default.css">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h1>Get Your FREE Quote Today!</h1>
+            <h2>Fill out the form below and we'll reach out to set up your free quote!</h2>
+            <form>
+                <label for="first-name">First name:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="First Name..." required>
+
+                <label for="middle-name">Middle name or initial:</label>
+                <input type="text" name="middle-name" id="middle-name" value="" placeholder="Middle Name... (optional)">
+
+                <label for="last-name">Last name:</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Last Name..." required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email..." required>
+
+                <label for="address">Address:</label>
+                <input type="text" name="address" id="address" placeholder="Address..." required>
+
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" placeholder="City..." required>
+
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state" placeholder="State..." required>
+
+                <label for="zip">Zip Code:</label>
+                <input type="text" name="zip" id="zip" placeholder="Zip..." required>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</Button>
+            </form>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/HTML_include.min.js"></script>
+    </body>
+</html>
