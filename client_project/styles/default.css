@@ -6,28 +6,28 @@
   --black: #1B1F3B;
   --black-2: #222542;
   --light-blue: #DCEDFF;
-  --green: #29d691;
+  --gray: #BDCDDD;
+  --green: #13B94D;
+
 }
 
 html {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  color: var(--light-blue);
-  background-color: var(--black-2);
+  color: var(--black-2);
+  background-color: var(--light-blue);
   font-family: "Fredoka", sans-serif;
 }
 
 header {
   display: flex;
-  position: sticky;
   justify-content: center;
-  gap: 20rem;
+  gap: 4rem;
   padding: 0;
   background-color: var(--black);
 }
@@ -41,17 +41,19 @@ main {
   text-align: center;
   padding: 0 4rem;
   margin: 0 auto;
+  background-color: var(--light-blue);
 }
 
 footer {
   background-color: var(--black);
-  font-size: 3.5rem;
-  padding: 0 20rem;
+  color: var(--light-blue);
+  margin-top: 8rem;
+  padding: 4rem;
 }
 
 header nav {
   display: flex;
-  gap: 20rem;
+  gap: 4rem;
   justify-content: center;
   align-items: center;
 }
@@ -77,12 +79,16 @@ header img{
     border-radius: 5px;
 }
 a {
-  color: #DCEDFF;
+  color: var(--light-blue);
   text-decoration: none;
 }
 
 a:visited {
-  color: #DCEDFF;
+  color: var(--light-blue);
+}
+
+a:hover{
+  color: var(--gray)
 }
 
 a[download] {
@@ -94,16 +100,17 @@ a[download] {
 }
 
 h1 {
-  font-size: 10rem;
+  font-size: 8rem;
+  color: var(--red);
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--red);
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Nunito Sans", serif;
   color: var(--green);
   margin-bottom: 1rem;
@@ -111,8 +118,8 @@ h3 {
 
 p {
   font-family: 'Nunito Sans', serif;
-  font-size: 3rem;
-  width: 100%;
+  font-size: 2.5rem;
+  width: 50%;
   text-align: left;
   margin: 0;
 }
@@ -128,8 +135,9 @@ ul {
   font-size: 3rem;
   list-style: none;
   padding: 0;
-  width: 100%;
+  width: 50%;
 }
+
 
 li {
   background-color: var(--black);
@@ -156,9 +164,16 @@ li div {
   gap: 2rem;
 }
 
+
 li div img {
   border-radius: 10px;
   flex-shrink: 0;
+}
+
+li p{
+  margin: 0 auto;
+  color: var(--light-blue);
+  width: 80%
 }
 
 form{
@@ -176,6 +191,10 @@ form *{
   font-size: 3rem;
 }
 
+.carousel-wrapper{
+  width: 100%;
+  overflow: hidden;
+}
 
 .imagecarousel {
   height: 250px;
@@ -184,15 +203,12 @@ form *{
   justify-content: center;
   width: fit-content;
   gap: 20px;
+  animation: bannermove 50s linear infinite;
 }
 
 .imagecarousel img {
   margin: 0px 0px;
   box-shadow: 2px 2px 8px #8a8a8a;
-}
-
-.imagecarousel {
-  animation: bannermove 50s linear infinite;
 }
 
 @keyframes bannermove {
@@ -214,3 +230,44 @@ form *{
 }
 
 
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    header{
+        max-width: 1400px;
+    }
+
+    main{
+        max-width: 1400px;
+    }
+
+    footer{
+        max-width: 1400px;
+    }
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    header{
+        max-width: 980px;
+    }
+
+    main{
+        max-width: 980px;
+    }
+
+    footer{
+        max-width: 980px;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    header{
+        max-width: 600px;
+    }
+
+    main{
+        max-width: 600px;
+    }
+
+    footer{
+        max-width: 600px;
+    }
+}
