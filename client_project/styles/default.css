@@ -28,7 +28,6 @@ header {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  gap: 4rem;
   font-size: 3rem;
   background-color: var(--black);
 }
@@ -189,6 +188,12 @@ form{
 form *{
   font-size: 3rem;
 }
+
+label{
+  color: var(--light-blue);
+}
+
+
 
 .carousel-wrapper{
   width: 100%;
