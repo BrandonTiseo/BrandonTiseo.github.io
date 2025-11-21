@@ -31,7 +31,7 @@ footer{
 }
 
 
-h1, h2, h3, b{
+h1, h2, h3, h4, h5, b{
     font-family:'Inter';
 }
 
@@ -71,7 +71,6 @@ figure img{
 ul{
     max-width: 80%;
     margin: 0 auto;
-
 }
 
 ol{
