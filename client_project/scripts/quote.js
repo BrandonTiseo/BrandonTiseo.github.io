@@ -6,6 +6,7 @@ let spinner;
 function loadSpinner(){
     spinner = document.createElement("div");
     spinner.className = "spinner";
+    spinner.id = "quote-spinner";
     document.querySelector('main').appendChild(spinner);
 }
 

@@ -219,7 +219,7 @@ label{
   transition: opacity 1s ease-in-out;
 }
 
-#image-carousel img.active{
+#image-carousel .active{
   opacity: 1;
 }
 
@@ -237,11 +237,11 @@ label{
   background: rgba(0, 0, 0, 0.7);
 }
 
-.carousel-arrow.left {
+#prev-slide {
   left: 130px;
 }
 
-.carousel-arrow.right {
+#next-slide {
   right: 130px;
 }
 
@@ -290,10 +290,13 @@ label{
     padding: 10px;
 }
 
-.spinner{
-  border: 4px solid #fff;
+#quote-spinner{
   width: 80px;
   height: 80px;
+}
+
+.spinner{
+  border: 4px solid #fff;
   border-radius: 50%;
   border-left-color: var(--green);
   animation: spinner 1s ease-in-out infinite;
@@ -321,11 +324,11 @@ label{
     width: 70%;
   }
 
-  .carousel-arrow.left {
+  #prev-slide {
     left: 30px;
   }
 
-  .carousel-arrow.right {
+  #next-slide {
     right: 30px;
   }
 }
@@ -366,11 +369,11 @@ label{
       width: 100%; 
   }
 
-  .carousel-arrow.left {
+  #prev-slide {
     left: -20px;
   }
 
-  .carousel-arrow.right {
+  #next-slide {
     right: -20px;
   }
 }

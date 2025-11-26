@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const slideCount = slides.length;
 
   function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active'));
+    slides.forEach((slide) => slide.classList.remove('active'));
     slides[index].classList.add('active');
   }
 
