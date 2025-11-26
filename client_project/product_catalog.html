@@ -12,13 +12,22 @@
             <div data-include="components/header.html"></div>
         </header>
         <main>
+            <div id = "notepad-container">
+                <textarea id="notepad"></textarea>
+                <div id = "notepad-button-container">
+                    <button id="show-notepad">Show Notepad</button>
+                    <button id="clear-notepad">Clear</button>
+                </div>
+
+            </div>
             <h1>Product Catalog</h1>
-            <p>Browse our product catalog to see what lighting and decoration we offer!</p>
+            <p class="centered">Browse our product catalog to see what lighting and decoration we offer!</p>
             <embed src="./pdfs/lite-d-core_product_catalog.pdf"  type="application/pdf">
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
         <script src="scripts/HTML_include.min.js"></script>
+        <script src="./scripts/notepad.js"></script>
     </body>
 </html>

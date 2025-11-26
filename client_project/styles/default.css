@@ -90,14 +90,6 @@ a:hover{
   color: var(--gray)
 }
 
-a[download] {
-  font-size: 5rem;
-  background-color: var(--green);
-  margin: 50px;
-  border-radius: 10px;
-  padding: 10px; 
-}
-
 h1 {
   font-size: 8rem;
   color: var(--red);
@@ -207,6 +199,55 @@ label{
   color: var(--green-2);
 }
 
+.centered{
+  text-align: center;
+}
+
+#notepad-container {
+    position: absolute;
+    top: 155px;
+    right: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+#notepad {
+    display: none;
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+#notepad-button-container{
+  display: flex;
+  width: 308px;
+}
+
+#show-notepad {
+  color: var(--light-blue);
+  background-color: var(--green-2);
+  border: 3px solid var(--green);
+  font-weight: 600;
+  width: 50%;
+}
+
+#clear-notepad {
+  color: var(--light-blue);
+  background-color: var(--red);
+  border: 3px solid var(--red-2);
+  font-weight: 600;
+  display: none;
+  width: 50%;
+}
+
+#imagegallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto); 
+    gap: 10px; 
+    padding: 10px;
+}
+
 .spinner{
   border: 4px solid #fff;
   width: 80px;
@@ -239,11 +280,6 @@ label{
   animation: bannermove 50s linear infinite;
 }
 
-.imagecarousel img {
-  margin: 0px 0px;
-  box-shadow: 2px 2px 8px #8a8a8a;
-}
-
 @keyframes bannermove {
   0% {
     transform: translateX(0);
@@ -253,23 +289,18 @@ label{
   }
 }
 
-
-#imagegallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, auto); 
-    gap: 10px; 
-    padding: 10px;
-}
-
-
-@media (min-width: 1000px){
+@media (min-width: 1300px){
   header nav a:last-child{
     margin-left: 8rem;
   }
 }
 
 
+@media (min-width: 601px) and (max-width: 1299px){
+  embed{
+    width: 70%;
+  }
+}
 @media (max-width: 600px) {
   header nav {
     flex-direction: column;
@@ -290,5 +321,20 @@ label{
 
   embed{
     width: 100%;
+  }
+
+  #notepad-container {
+    position: static; 
+    margin: 20px auto;
+    height: 300px;        
+  }
+
+  #notepad-button-container {
+      flex-direction: column;
+      gap: 0;
+  }
+
+  #show-notepad, #clear-notepad {
+      width: 100%; 
   }
 }

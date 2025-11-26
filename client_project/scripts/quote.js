@@ -22,7 +22,7 @@ function displayResult(res){
     main.appendChild(result);
     setTimeout(() => {
         result.remove();
-    },200);
+    },2000);
 }
 
 
@@ -32,6 +32,11 @@ formElement.addEventListener('submit', (e) => {
     loadSpinner();
 
     const formData = new FormData(formElement);
+
+    const checkbox = document.getElementById('notes');
+    const notesContent = (checkbox.checked) ? localStorage.getItem('notepadContent') : '';
+    formData.append('notes', notesContent);
+    
     const formObject = Object.fromEntries(formData.entries());
 
     emailjs.send('service_f0de6ne', 'template_mrnfl89', formObject)
