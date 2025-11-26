@@ -14,7 +14,7 @@
         <main>
             <h1>Get Your FREE Quote Today!</h1>
             <h2>Fill out the form below and we'll reach out to set up your free quote!</h2>
-            <form>
+            <form id="quote-form">
                 <label for="first-name">First name:</label>
                 <input type="text" name="first-name" id="first-name" placeholder="First Name..." required>
 
@@ -27,7 +27,7 @@
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="Email..." required>
 
-                <label for="address">Address:</label>
+                <label for="address">Address:</label >
                 <input type="text" name="address" id="address" placeholder="Address..." required>
 
                 <label for="city">City:</label>
@@ -38,13 +38,14 @@
 
                 <label for="zip">Zip Code:</label>
                 <input type="text" name="zip" id="zip" placeholder="Zip..." required>
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</Button>
+                <button id='submit-button' type="submit">Submit</button>
+                <button id='reset-button' type="reset">Reset</Button>
             </form>
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
         <script src="scripts/HTML_include.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>        <script src="scripts/quote.js"></script>
     </body>
 </html>
