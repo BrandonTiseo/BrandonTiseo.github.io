@@ -203,6 +203,26 @@ label{
   text-align: center;
 }
 
+#image-carousel{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+#image-carousel img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#image-carousel img.active{
+  opacity: 1;
+}
+
+
 #notepad-container {
     position: absolute;
     top: 155px;
@@ -266,28 +286,6 @@ label{
   }
 }
 
-.carousel-wrapper{
-  width: 100%;
-  overflow: hidden;
-}
-
-.imagecarousel {
-  height: 250px;
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  animation: bannermove 50s linear infinite;
-}
-
-@keyframes bannermove {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 @media (min-width: 1300px){
   header nav a:last-child{
