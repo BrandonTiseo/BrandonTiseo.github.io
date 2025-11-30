@@ -115,6 +115,11 @@ p {
   margin: 0;
 }
 
+hr{
+  border: 1px solid var(--light-blue);
+  margin: 10px 0px;
+} 
+
 main img {
   border-radius: 5px;
   margin: 30px auto;
